@@ -1,0 +1,15 @@
+{
+    "name": "c_dev",
+    "dockerComposeFile": "docker-compose.yml",
+    "extensions": [
+		"formulahendry.terminal",
+		"ms-vscode.cpptools",
+		"austin.code-gnu-global",
+		"twxs.cmake",
+		"ms-vscode.cmake-tools",
+		"donjayamanne.githistory"
+	],
+    "service": "c_dev",
+    "workspaceFolder": "/workdir",
+    "shutdownAction": "stopCompose"
+}

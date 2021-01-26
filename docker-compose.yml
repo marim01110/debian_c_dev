@@ -1,0 +1,17 @@
+version: "3"
+services:
+  c_dev:
+    image: marimo1110/debian_c_dev
+    #build: .
+    command: sleep infinity
+    volumes:
+      - ../:/workdir
+      - ~/.gitconfig:/root/.gitconfig
+    environment:
+      SHELL: "/bin/bash"
+    tty: true
+    # to use gdb
+    cap_add:
+      - SYS_PTRACE
+    security_opt:
+      - seccomp:unconfined
