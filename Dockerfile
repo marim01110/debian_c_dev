@@ -1,6 +1,6 @@
-FROM debian:stable-20210311
+FROM debian:stable-20211011
 MAINTAINER Kohei Yoshikawa <marimo3418@neko2.net>
-# 2021.03.23 Updated
+# 2021.10.21 Updated
 WORKDIR /opt
 RUN apt update \
     && apt install build-essential gdb cmake git -y \
