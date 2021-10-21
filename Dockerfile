@@ -3,5 +3,7 @@ MAINTAINER Kohei Yoshikawa <marimo3418@neko2.net>
 # 2021.03.23 Updated
 WORKDIR /opt
 RUN apt update \
-    && apt install build-essential gdb cmake git -y
+    && apt install build-essential gdb cmake git -y \
+    && apt clean \
+    && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 CMD sleep infinity
